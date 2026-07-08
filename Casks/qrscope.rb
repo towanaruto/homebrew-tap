@@ -16,10 +16,10 @@ cask "qrscope" do
   ]
 
   caveats <<~EOS
-    QRScope is ad-hoc signed (not notarized). If macOS blocks the app,
-    reinstall with the --no-quarantine flag:
+    QRScope is ad-hoc signed (not notarized). If macOS blocks the app
+    on first launch, remove the quarantine attribute:
 
-      brew install --cask --no-quarantine qrscope
+      xattr -d com.apple.quarantine /Applications/QRScope.app
 
     QRScope needs Screen Recording permission to detect QR codes:
 
