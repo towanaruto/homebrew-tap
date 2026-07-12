@@ -8,13 +8,11 @@ cask "qrscope" do
   homepage "https://github.com/towanaruto/QRScope"
 
   auto_updates true
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "QRScope.app"
 
-  zap trash: [
-    "~/Library/Application Support/QRScope",
-  ]
+  zap trash: "~/Library/Application Support/QRScope"
 
   caveats <<~EOS
     QRScope is ad-hoc signed (not notarized). If macOS blocks the app
