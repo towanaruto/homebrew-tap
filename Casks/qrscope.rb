@@ -1,12 +1,13 @@
 cask "qrscope" do
-  version "1.0.0"
-  sha256 "6d98ff24642587977eaf568357045d1c9ac3b9f595243d3b287cce6e0a19fba2"
+  version "1.3.0"
+  sha256 "64ca443ed6584a3edabdcfd7ed491c59d0b7b5ac5534dfa5bc1cf1e9c720904a"
 
   url "https://github.com/towanaruto/QRScope/releases/download/v#{version}/QRScope-#{version}.zip"
   name "QRScope"
   desc "Right-click any QR code on screen and open it with one click"
   homepage "https://github.com/towanaruto/QRScope"
 
+  auto_updates true
   depends_on macos: ">= :sonoma"
 
   app "QRScope.app"
