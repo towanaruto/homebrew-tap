@@ -1,6 +1,6 @@
 cask "qrscope" do
-  version "1.3.0"
-  sha256 "64ca443ed6584a3edabdcfd7ed491c59d0b7b5ac5534dfa5bc1cf1e9c720904a"
+  version "1.4.0"
+  sha256 "b03a12a1269cafef01658d0af072dd8c7d3a085f3ae6714763eb10174b6a8009"
 
   url "https://github.com/towanaruto/QRScope/releases/download/v#{version}/QRScope-#{version}.zip"
   name "QRScope"
